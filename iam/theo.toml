@@ -1,0 +1,7 @@
+[IAM solution]
+
+Anything but keycloak
+
+[[Rationale]]
+
+Keycloak is meh on deploying it, setting it up, scalability, security, resource consumption, usability, et j'en passe des plus belles et des meilleures
