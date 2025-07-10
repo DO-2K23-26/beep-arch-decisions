@@ -1,0 +1,16 @@
+= Our migroservices
+
+- Users
+- Authentication (FTLOG not Keycloak)
+- Communities
+- Authorization (AuthZed)
+- Messaging
+- Files
+- Calls
+- The K8s API Gateway, with HTTPRoutes to route each backend path to the correct service.
+
+== Rationale
+
+Grouping very interdependant ("tightly-coupled") business domains (user services the app provides - which I identified through user stories). The idea being to reap some of the benefits of a microservices architecture, without getting too complex.
+
+Using the K8s API Gateway as the gateway, I make use of an existing, well-designed mechanism that's proven to work well, and to separate the concerns of developers, operators and infrastructure owners thorougly.
