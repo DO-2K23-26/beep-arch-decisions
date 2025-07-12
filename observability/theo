@@ -1,0 +1,25 @@
+-> Observability
+
+A full observability stack is very complex to handle, and very resource hungry, but also very important in case of issues.
+
+--> Health
+
+I suggest all apps implement the 3 kubernetes probes Liveness, Readiness and Startup.
+
+--> Logs
+I suggest we define a standardized logs format between apps, in json, and written to standard output - taking security practices into account for the logs format definition. Grafana Alloy may be used to collect these logs, as well as the logs of the Kubelet on each node, then index and store them into Grafan Loki.
+
+--> Tracing
+
+I suggest we may use a Service Mesh to automatically propagate trace IDs into requests - although that means more complex setup and maintenance of the cluster.
+
+We may also look into OTEL's Rust support.
+
+--> Metrics
+
+I suggest we use Prometheus to manage metrics.
+
+--> Visualization and alerting
+
+I suggest we use Grafana for visualization and alerting of all the above. Disk health may also be monitored using smartmontools, and the alerts sent to Grafana.
+

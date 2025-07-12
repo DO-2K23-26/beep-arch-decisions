@@ -1,0 +1,9 @@
+= Authorization
+
+Suggested solution: AuthZed
+
+== Rationale
+
+We have gone through lots of other solutions such as OPA, Keycloak, Permify, our own systems... There are differences in the DSLanguage, usability/ease of deployment, scalability..
+
+I believe AuthZed to be the most balanced solution in terms of ease of use, development of authz rules, and integration with our apps; as well as deployment.
