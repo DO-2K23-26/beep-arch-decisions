@@ -9,6 +9,8 @@ I suggest all apps implement the 3 kubernetes probes Liveness, Readiness and Sta
 --> Logs
 I suggest we define a standardized logs format between apps, in json, and written to standard output - taking security practices into account for the logs format definition. Grafana Alloy may be used to collect these logs, as well as the logs of the Kubelet on each node, then index and store them into Grafan Loki.
 
+We may also use Logstash or Fluentd to collect the logs... I believe Fluentd may be more performant and resource efficient, as it is written in C. Note that it also has much simpler features, which may suffice.
+
 --> Tracing
 
 I suggest we may use a Service Mesh to automatically propagate trace IDs into requests - although that means more complex setup and maintenance of the cluster.
