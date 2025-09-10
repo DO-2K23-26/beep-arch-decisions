@@ -1,6 +1,6 @@
 # broker technology And data format
 
-I recommend RabbitMQ with protobuf.
+I recommend RabbitMQ with protobuf, _without_ a remote registry.
 
 ## Broker rationale
 
@@ -26,3 +26,6 @@ I recommend Protobuf. My experience with it has proven to me that it is just as 
 - Enforces defining your interface and managing it - I consider this vital in a microservices env.
 - Provides idiomatic features for retro- and forward-compatibility of API interfaces through enforced numbering of the message fields (which, combined with the clear types. also makes breaking changes very clear)
 - Better performance through a well made binary compression - Though that's not the most relevant for us.
+
+Note that I recommend Protobuf files to be versioned _in the code_, not deployed in a remote, self-managed registry on the network/in the cluster.
+This makes no Ops overhead, and APIs don't break thanks to language features (excepting API breaking changes, ofc)
