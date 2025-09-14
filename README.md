@@ -8,5 +8,7 @@ The following decisions have been taken:
 - Separation into services. See `services/`
 - Observability stack. See `observability/`
 
+The following decisions are still being decided:
+
 - Broker tech and data format to exchange between services/broker is being taken in `broker/`
 - Authz handling is being taken in `authz/`
