@@ -1,7 +1,10 @@
 [IAM solution]
 
-Anything but keycloak
+Anything but keycloak. I'd vote for Ferriskey.
 
 [[Rationale]]
 
 Keycloak is meh on deploying it, setting it up, scalability, security, resource consumption, usability, et j'en passe des plus belles et des meilleures
+
+Ferriskey could be fun because it would help the project grow properly, to have Beep as an actual test bed for Ferriskey.
+
