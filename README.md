@@ -12,3 +12,4 @@ The following decisions are still being decided:
 
 - Broker tech and data format to exchange between services/broker is being taken in `broker/`
 - Authz handling is being taken in `authz/`
+- IAM decision is being taken in `iam/`
