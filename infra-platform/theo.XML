@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+ <ServiceMesh>
+  Linkerd
+ </ServiceMesh>
+ <CNI>
+  weave
+ </CNI>
+</Solution>
+<Rationale>
+ From personal experiences and docs, I know that weave
+ <LinkWeave>
+  https://github.com/rajch/weave#using-weave-on-kubernetes
+ </LinkWeave>
+ is the simplest CNI to install and manage that also fits our use case:
+ <OurUseCase>
+  Setting up Network Policies
+ </OurUseCase>
+ I believe Linkerd and our own observability stack would be sufficient to monitor the apps and network, so that we don't need baked-in observability from the CNI,
+ nor features such as eBPF,
+ and that we wish to keep overhead of the resource consuption to a minimum,
+ all the while not having to actively manage the CNI, or spend lots of efforts setting it up properly.
+ These could happen if we use Cillium or Calico. They are great, but too complex for our use. I believe Weave is complete for us.
+ If we ever need another CNI, we can swap it or chain it. But I doubt we will for now.
+</Rationale>
