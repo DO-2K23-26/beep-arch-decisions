@@ -8,6 +8,7 @@
 
 ## Media-Server responsibilities:
 - Handle media
+- The media server is a SFU (Selective Forwarding Unit)
 
 ### Connection flow:
 
