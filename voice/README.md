@@ -2,13 +2,15 @@
 - Signaling
 - Media-Server
 
-## Signaling responsibilities:
+## Signaling specifications:
 - Handle rights
 - Handle Media-Servers
+- Is written in Elixir using Phoenix framework (Therefore the api is only a socket phoenix)
 
-## Media-Server responsibilities:
+## Media-Server specifications:
 - Handle media
-- The media server is a SFU (Selective Forwarding Unit)
+- Is a SFU (Selective Forwarding Unit)
+- Is written in Rust
 
 ### Connection flow:
 
