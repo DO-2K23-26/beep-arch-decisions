@@ -58,7 +58,7 @@ it is the same, remove the track from the stream.
 
 ### Why redis ? (To be challenged)
 
-We need a fast cash storage to store short lived data.
+We need a fast cache storage to store short lived data.
 But we also need something that is not heavy to call on every request.
 
 ### Security
